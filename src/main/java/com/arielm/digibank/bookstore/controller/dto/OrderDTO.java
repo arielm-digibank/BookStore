@@ -4,6 +4,6 @@ import lombok.Getter;
 
 @Getter
 public class OrderDTO {
-    private int customerId;
-    private int bookId;
+    private Long customerId;
+    private Long bookId;
 }

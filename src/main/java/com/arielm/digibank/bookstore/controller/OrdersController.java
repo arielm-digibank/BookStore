@@ -22,7 +22,7 @@ public class OrdersController {
 
     @RequestMapping(value = "/", method = RequestMethod.POST ,produces = {MediaType.APPLICATION_JSON_VALUE},consumes = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
-    public long addBook(@RequestBody OrderDTO orderDTO)
+    public long addOrder(@RequestBody OrderDTO orderDTO)
     {
         return ordersService.addOrder(orderDTO.getBookId(), orderDTO.getCustomerId());
     }
